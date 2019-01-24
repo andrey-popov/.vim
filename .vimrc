@@ -8,3 +8,7 @@ set ruler
 " Wrap long lines, but do not break words in the middle
 set wrap
 set linebreak
+
+" Highlight for search
+set hlsearch
+
