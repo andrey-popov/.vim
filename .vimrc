@@ -1,5 +1,11 @@
 set number
 syntax on
+
+" Indentation with spaces and a 'smart' <BS>
+set tabstop=4
+set shiftwidth=0    " Set to the value of tabstop
+set softtabstop=-1  " Set to the value of shiftwidth
+set expandtab
 set autoindent
 
 " Show the current position in the file
