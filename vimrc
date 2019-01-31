@@ -1,5 +1,5 @@
 set number
-syntax on
+syntax enable
 
 " Indentation with spaces and a 'smart' <BS>
 set tabstop=4
