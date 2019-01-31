@@ -18,3 +18,9 @@ set linebreak
 " Highlight for search
 set hlsearch
 
+" Enable file type detection and loading of plugins and indent files for
+" specific file types
+filetype on
+filetype plugin on
+filetype indent on
+
