@@ -1,5 +1,8 @@
 set number
 
+" Allow backspacing over everything in insert mode.
+set backspace=indent,eol,start
+
 
 syntax enable
 
