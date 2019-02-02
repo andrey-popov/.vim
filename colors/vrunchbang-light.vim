@@ -237,7 +237,7 @@ endif
 " disable LineNr background altogether
 if exists('g:vrunchbang_light_LineNr')
 if g:vrunchbang_light_LineNr == 'off'
-cal <sid>h('CursorLineNr'     , s:g4 , s:g0 , s:t4 , s:t0 , 'none'      , ''  )
-cal <sid>h('LineNr'           , s:g4 , s:g0 , s:t4 , s:t0 , 'none'      , ''  )
+cal <sid>h('CursorLineNr'     , s:g1 , s:g0 , s:t1 , s:t0 , 'none'      , ''  )
+cal <sid>h('LineNr'           , s:g1 , s:g0 , s:t1 , s:t0 , 'none'      , ''  )
 endif
 endif

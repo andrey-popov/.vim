@@ -10,6 +10,7 @@ syntax enable
 set termguicolors
 
 " Colour theme
+let g:vrunchbang_light_LineNr='off'
 colorscheme vrunchbang-light
 
 " Highlight for search
