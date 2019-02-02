@@ -7,7 +7,9 @@ set backspace=indent,eol,start
 syntax enable
 
 " Use 24-bit colours in terminal
-set termguicolors
+if has('termguicolors')
+    set termguicolors
+endif
 
 " Colour theme
 let g:vrunchbang_light_LineNr='off'
