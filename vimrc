@@ -1,3 +1,7 @@
+" Enable mouse support
+set mouse=a
+
+
 set number
 
 " Allow backspacing over everything in insert mode.
