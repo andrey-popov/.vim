@@ -1,5 +1,18 @@
 set number
+
+
 syntax enable
+
+" Use 24-bit colours in terminal
+set termguicolors
+
+" Colour theme
+set background=light
+colorscheme solarized8
+
+" Highlight for search
+set hlsearch
+
 
 " Indentation with spaces and a 'smart' <BS>
 set tabstop=4
@@ -14,9 +27,6 @@ set ruler
 " Wrap long lines, but do not break words in the middle
 set wrap
 set linebreak
-
-" Highlight for search
-set hlsearch
 
 " Enable file type detection and loading of plugins and indent files for
 " specific file types
