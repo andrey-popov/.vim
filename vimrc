@@ -10,8 +10,7 @@ syntax enable
 set termguicolors
 
 " Colour theme
-set background=light
-colorscheme solarized8
+colorscheme vrunchbang-light
 
 " Highlight for search
 set hlsearch
