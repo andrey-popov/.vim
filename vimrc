@@ -46,3 +46,7 @@ filetype on
 filetype plugin on
 filetype indent on
 
+
+" Default language for spellcheck
+set spelllang=en_gb
+
