@@ -1,6 +1,11 @@
 " Enable mouse support
 set mouse=a
 
+" Mouse handling for a modern xterm.  Allows resizing of split panels.
+if has('mouse_sgr')
+    set ttymouse=sgr
+endif
+
 
 set number
 
