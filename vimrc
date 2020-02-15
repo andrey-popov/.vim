@@ -89,6 +89,9 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 
+" Fuzzy file search
+Plug 'ctrlpvim/ctrlp.vim'
+
 call plug#end()
 
 
