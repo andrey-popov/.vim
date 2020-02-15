@@ -53,6 +53,10 @@ set splitbelow
 set ignorecase
 set smartcase
 
+" <C-L> to clear search highlights.  Adjusted from [1].
+" [1] https://github.com/tpope/vim-sensible/blob/2d9f34c09f548ed4df213389caa2882bfe56db58/plugin/sensible.vim#L33-L36
+nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
+
 if !has('nvim')
   set hlsearch
   set ruler
