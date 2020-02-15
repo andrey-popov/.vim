@@ -92,6 +92,9 @@ endif
 " Fuzzy file search
 Plug 'ctrlpvim/ctrlp.vim'
 
+" Block comments
+Plug 'tpope/vim-commentary'
+
 call plug#end()
 
 
