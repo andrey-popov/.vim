@@ -1,55 +1,62 @@
-" Enable mouse support
-set mouse=a
+if !has('nvim')
+  set nocompatible
+endif
 
-" Mouse handling for a modern xterm.  Allows resizing of split panels.
-if has('mouse_sgr')
-    set ttymouse=sgr
+" Mouse support
+set mouse=a
+if !has('nvim') && has('mouse_sgr')
+  " Mouse handling for a modern xterm.  Allows resizing of split panels.
+  set ttymouse=sgr
+endif
+
+set number
+syntax enable
+" Detect file types and load type-specific plugins and indent files
+filetype plugin indent on
+
+if !has('nvim')
+  " Allow backspacing over everything in insert mode.
+  set backspace=indent,eol,start
 endif
 
 
-set number
-
-" Allow backspacing over everything in insert mode.
-set backspace=indent,eol,start
-
-
-syntax enable
-
 " Use 24-bit colours in terminal
 if has('termguicolors')
-    set termguicolors
+  set termguicolors
 endif
 
 " Colour theme
 let g:vrunchbang_light_LineNr='off'
 colorscheme vrunchbang-light
 
-" Highlight for search
-set hlsearch
-
 
 " Indentation with spaces and a 'smart' <BS>
-set tabstop=4
+set tabstop=2
 set shiftwidth=0    " Set to the value of tabstop
 set softtabstop=-1  " Set to the value of shiftwidth
 set expandtab
 set autoindent
 
-" Show the current position in the file
-set ruler
-
-" Show incomplete commands
-set showcmd
+" Display tabs and trailing spaces
+set list
+set listchars=tab:⇥·,trail:·
 
 " Wrap long lines, but do not break words in the middle
 set wrap
 set linebreak
 
-" Enable file type detection and loading of plugins and indent files for
-" specific file types
-filetype on
-filetype plugin on
-filetype indent on
+" When splitting windows, new windows are added to the right or below
+set splitright
+set splitbelow
+
+" Ignore case in search unless pattern contains a capital letter or \C flag
+set ignorecase
+set smartcase
+
+if !has('nvim')
+  set hlsearch
+  set ruler
+endif
 
 
 " Default language for spellcheck
