@@ -67,6 +67,8 @@ endif
 set spelllang=en_gb
 
 
+set hidden
+
 " Map Shift and left or right arrow to navigate tabs
 noremap <S-Left> :tabprevious<CR>
 inoremap <S-Left> <ESC>:tabprevious<CR>a
