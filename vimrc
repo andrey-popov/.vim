@@ -101,6 +101,9 @@ Plug 'ctrlpvim/ctrlp.vim'
 " Block comments
 Plug 'tpope/vim-commentary'
 
+" Pair parentheses and quotation marks
+Plug 'jiangmiao/auto-pairs'
+
 Plug 'lervag/vimtex'
 
 call plug#end()
