@@ -118,3 +118,6 @@ inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
 call deoplete#custom#var('omni', 'input_patterns',
   \ { 'tex': g:vimtex#re#deoplete })
 
+" Settings for auto-pairs
+let g:AutoPairsCenterLine = 0
+let g:AutoPairsMultilineClose = 0
