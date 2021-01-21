@@ -1,6 +1,7 @@
 if !has('nvim')
   set nocompatible
 endif
+set encoding=utf-8
 
 " Mouse support
 set mouse=a
