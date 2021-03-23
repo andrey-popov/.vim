@@ -111,13 +111,15 @@ call plug#end()
 
 
 " Setting for deoplete
-let g:deoplete#enable_at_startup = 1
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
-" https://jdhao.github.io/2019/03/26/nvim_latex_write_preview
-call deoplete#custom#var('omni', 'input_patterns',
-  \ { 'tex': g:vimtex#re#deoplete })
+if has('python')
+  let g:deoplete#enable_at_startup = 1
+  inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+  inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+  inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
+  " https://jdhao.github.io/2019/03/26/nvim_latex_write_preview
+  call deoplete#custom#var('omni', 'input_patterns',
+    \ { 'tex': g:vimtex#re#deoplete })
+endif
 
 " Settings for auto-pairs
 let g:AutoPairsCenterLine = 0
